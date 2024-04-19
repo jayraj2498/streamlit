@@ -5,8 +5,18 @@ st.title("Welcome to Streamlit page : ")
 # how you crete the website and live it 
 
 
+name = st.text_input("Enter your name ") 
+f_name = st.text_input("Enter your father name ") 
+addres= st.text_area("Enter you full adress") 
+class_data= st.selectbox("Enter your class :" , (1,2,3,4,5,6,7,8,9))
 
 
+button = st.button("Done") 
+if button :
+    st.markdown(f""" name :{name} \n 
+                    father_name : {f_name} \n 
+                    address : {addres} \n 
+                    Class: {class_data}""" )
 
 
 
